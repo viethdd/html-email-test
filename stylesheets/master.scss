@@ -1,0 +1,82 @@
+@import 'tool/tools';
+
+// @import url(../fonts/Conduit/Conduit ITC Bold.otf);
+// @import url(../fonts/Conduit/Conduit ITC Bold Italic.otf);
+// @import url(../fonts/Conduit/Conduit ITC Italic.otf);
+// @import url(../fonts/Conduit/Conduit ITC.otf);
+
+@font-face {
+  font-family: 'conduitBold';
+  src: url('../fonts/Conduit/Conduit ITC Bold.otf') format('truetype'); 
+}
+
+@font-face {
+  font-family: 'conduitBoldItalic';
+  src: url('../fonts/Conduit/Conduit ITC Bold Italic.otf') format('truetype'); 
+}
+
+@font-face {
+  font-family: 'conduitItalic';
+  src: url('../fonts/Conduit/Conduit ITC Italic.otf') format('truetype'); 
+}
+
+@font-face {
+  font-family: 'conduit';
+  src: url('../fonts/Conduit/Conduit ITC.otf') format('truetype'); 
+}
+
+$goldsgym: rgb(249,227,0);
+$ggblack: rgb(10,10,10);
+$gggray:rgb(86,86,86);
+
+.gold{
+  color: $goldsgym;
+}
+.black{
+  color: $ggblack;
+}
+.gray{
+  color: $gggray;
+}
+
+table{
+  table-layout:   fixed;
+  border-spacing: 0;
+}
+.wrapper{
+  width:   650px;
+  margin:  10px auto;
+  padding: 0;
+}
+.main-table {
+  background-color: $goldsgym;
+  width:            650px !important;
+  max-width:        650px;
+  padding:          10px;
+  // border:           1px solid red;
+  font-family:      'conduitBold',Palatino Linotype, Book Antiqua, Palatino, serif;
+}
+
+.main-table{
+  tr{
+    // background:        url("../img/gyms-photos/trx-pushup.jpg");
+    background-repeat: no-repeat;
+    td{
+      height:40px;
+    }
+    td:nth-child(2){
+      background: white;
+      border-top: 1px solid red;
+    }
+    td:first-child,td:last-child{
+      background: red;
+      border-bottom: 1px dotted blue;
+    }
+  }
+  tr:nth-child(2){
+    td:nth-child(2){
+      background: black;
+      color: white;
+    }
+  }
+}
