@@ -47,42 +47,30 @@ table{
   width:   650px;
   margin:  10px auto;
   padding: 0;
+  border: 1px solid gray;
 }
 .main-table {
-  background-color: $goldsgym;
-  width:            650px !important;
-  max-width:        650px;
-  padding:          10px;
-  // border:           1px solid red;
-  font-family:      'conduitBold',Palatino Linotype, Book Antiqua, Palatino, serif;
+  background:          url("../img/gyms-photos/trx-pushup.jpg");
+  background-repeat:   no-repeat;
+  background-size:     150%;
+  background-position: 50% 0%;
+  background-color:    $goldsgym;
+  width:               650px !important;
+  max-width:           650px;
+  padding:             10px;
+  font-family:         'conduitBold',Palatino Linotype, Book Antiqua, Palatino, serif;
 }
 
 .main-table{
-  tr{
-    background:        url("../img/gyms-photos/trx-pushup.jpg");
-    background-repeat: no-repeat;
+  tr:first-child{
     td{
       height:40px;
     }
-    td:nth-child(2){
-      background: white;
-      border-top: 1px solid red;
-    }
-    td:first-child,td:last-child{
-      background:    red;
-      border-bottom: 1px dotted blue;
-    }
   }
-  tr:nth-child(2){
-    td:nth-child(2){
-      background: black;
-      color: white;
-    }
-  }
-  tr:nth-child(3){
-    td:nth-child(2){
-      background: purple;
-      color: white;
+  tr{
+    td{
+      font-size: 72px;
+      color:$goldsgym;
     }
   }
 }
